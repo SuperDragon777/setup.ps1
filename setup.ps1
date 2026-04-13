@@ -30,6 +30,8 @@ if ($choice -eq 'y') {
     scoop update vscodium
     scoop install micro
     scoop update micro
+	echo "Installing tooly..."
+	pip install --upgrade tooly-dev
 } else {
     echo "Skipping installation, proceeding to user part..."
 }
