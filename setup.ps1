@@ -1,4 +1,5 @@
 echo "Starting setup script..."
+echo "Working on $((Get-CimInstance Win32_OperatingSystem).Caption)"
 echo "Working in dir: $pwd"
 echo "User desktop dir: $env:USERPROFILE\Desktop"
 
