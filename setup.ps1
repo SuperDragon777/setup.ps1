@@ -1,4 +1,15 @@
 echo "Starting setup script..."
+echo "Working in dir: $pwd"
+echo "User desktop dir: $env:USERPROFILE\Desktop"
+
+$choice = Read-Host "Do you change dir to desktop? (y/n)"
+if ($choice -eq 'y') {
+	cd $env:USERPROFILE\Desktop
+	mkdir SuperDragon777
+	cd SuperDragon777
+} else {
+	echo "Staying in current dir..."
+}
 
 $choice = Read-Host "Do you want to run installation? (y/n)"
 if ($choice -eq 'y') {
